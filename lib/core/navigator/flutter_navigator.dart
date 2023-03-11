@@ -13,7 +13,7 @@ class FlutterNavigator implements IFlutterNavigator {
 
   @override
   FocusScopeNode get focusScopeNode =>
-      navigatorKey.currentState!.focusNode.enclosingScope!;
+      navigatorKey.currentState!.focusScopeNode;
 
   @override
   OverlayState? get overlay => navigatorKey.currentState!.overlay;

@@ -22,15 +22,16 @@ class _CheckBoxBState extends State<CheckBoxB> {
 
   @override
   Widget build(BuildContext context) {
-    print('$_isChecked 11');
+    print('first time $_isChecked');
     setState(() {
       if (widget.setState) {
         _isChecked = false;
       } else {
         _isChecked = widget.intialValue;
       }
-      print('$_isChecked 22');
+      print('second time $_isChecked ');
     });
+
     return Row(
       children: [
         SizedBox(
@@ -44,7 +45,6 @@ class _CheckBoxBState extends State<CheckBoxB> {
                 _isChecked = newValue!;
               });
               widget.press(_isChecked);
-              print('$_isChecked 33');
             },
           ),
         ),

@@ -23,7 +23,7 @@ class HomeState extends Equatable {
       name: name ?? this.name,
       check1val: check1val ?? this.check1val,
       check2val: check2val ?? this.check2val,
-      setState2: setState2 ?? false,
+      setState2: setState2 ?? this.setState2,
     );
   }
 
