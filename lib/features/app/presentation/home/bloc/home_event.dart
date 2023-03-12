@@ -16,3 +16,5 @@ class GetCheck2val extends HomeEvent {
   const GetCheck2val({required this.value});
   final bool value;
 }
+
+class GoToLoginScreen extends HomeEvent {}

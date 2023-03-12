@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:structure/features/app/presentation/home/home_page.dart';
+import 'package:structure/core/ioc/global.dart';
+import 'package:structure/core/navigator/iflutter_navigator.dart';
+import 'package:structure/features/app/presentation/home/view/home_page.dart';
 
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 
@@ -17,6 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomeScreen(),
+      navigatorKey: getIt<IFlutterNavigator>().navigatorKey,
     );
   }
 }
